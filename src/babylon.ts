@@ -1,4 +1,4 @@
-import { ArcRotateCamera, Color4, DirectionalLight, Engine, Mesh, MeshBuilder, PBRMetallicRoughnessMaterial, Scene, StandardMaterial, Vector3, WebGPUEngine } from '@babylonjs/core'
+import { ArcRotateCamera, Color4, DirectionalLight, Mesh, MeshBuilder, PBRMetallicRoughnessMaterial, Scene, StandardMaterial, Vector3, WebGPUEngine } from '@babylonjs/core'
 
 export class Babylon {
 
