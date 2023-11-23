@@ -15,7 +15,7 @@ export class Babylon {
 
   initialize = async () => {
 
-    let balls = new Float32Array(8*this.N); // padding for webgpu
+    let balls = new Float32Array(8*this.N);
     const color = new Float32Array(4*this.N);
     const radius = new Float32Array(this.N);
     
@@ -62,8 +62,8 @@ export class Babylon {
     pbrMat.metallic = 0.6;
     pbrMat.roughness = 0.4;
 
-    this.ballMesh.material = mat;
-    // this.ballMesh.material = pbrMat;
+    // this.ballMesh.material = mat;
+    this.ballMesh.material = pbrMat;
 
     // thin instances /////////////////////////////////////
 

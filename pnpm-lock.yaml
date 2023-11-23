@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@babylonjs/core':
-    specifier: ^6.30.0
-    version: 6.30.0
+    specifier: ^6.31.0
+    version: 6.31.0
 
 devDependencies:
   typescript:
@@ -19,8 +19,8 @@ devDependencies:
 
 packages:
 
-  /@babylonjs/core@6.30.0:
-    resolution: {integrity: sha512-erN8efWBq8CX7qulaMiUA/FymiDBDQT1UK1cfX3yJ+NGJRyJp1XXVdIyI+KOu00ui+g7pT7QQz+B256YO6yQyw==}
+  /@babylonjs/core@6.31.0:
+    resolution: {integrity: sha512-yD/eC7coO7A0qdBBRWtOPGreMcQ7IzOLW00gLzKiAdxVkKX0q/2HTIKthkw2t9wtXZFmdqHU8lE15b3c8gwUWQ==}
     dev: false
 
   /@esbuild/android-arm64@0.18.20:
