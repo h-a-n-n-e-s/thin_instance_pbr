@@ -1,4 +1,4 @@
-import { ArcRotateCamera, Color4, DirectionalLight, Mesh, MeshBuilder, PBRMetallicRoughnessMaterial, Scene, StandardMaterial, Vector3, WebGPUEngine } from '@babylonjs/core'
+import { ArcRotateCamera, Color4, DirectionalLight, Mesh, MeshBuilder, Scene, Vector3, WebGPUEngine } from '@babylonjs/core'
 
 export class Babylon {
 
@@ -55,15 +55,15 @@ export class Babylon {
     
     // material ///////////////////////////////////////////
 
-    const mat = new StandardMaterial('mat');
-    mat.alpha = 1;
+    // const mat = new StandardMaterial('mat');
+    // mat.alpha = 1;
     
-    const pbrMat = new PBRMetallicRoughnessMaterial('pbrMat');
-    pbrMat.metallic = 0.6;
-    pbrMat.roughness = 0.4;
+    // const pbrMat = new PBRMetallicRoughnessMaterial('pbrMat');
+    // pbrMat.metallic = 0.6;
+    // pbrMat.roughness = 0.4;
 
     // this.ballMesh.material = mat;
-    this.ballMesh.material = pbrMat;
+    // this.ballMesh.material = pbrMat;
 
     // thin instances /////////////////////////////////////
 
@@ -113,7 +113,6 @@ export class Babylon {
     };
     requestAnimationFrame(customRender);
 
-    // engine.runRenderLoop(() => this.scene.render());
     window.addEventListener('resize', () => engine.resize());
   }
 }
