@@ -1,4 +1,19 @@
-import { ArcRotateCamera, Color4, DirectionalLight, Mesh, MeshBuilder, Scene, Vector3, WebGPUEngine } from '@babylonjs/core'
+
+import { ArcRotateCamera } from '@babylonjs/core/Cameras/arcRotateCamera';
+import { Color4 } from '@babylonjs/core/Maths/math.color';
+import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
+import { Scene } from '@babylonjs/core/scene';
+import { Vector3 } from '@babylonjs/core/Maths/math.vector';
+
+import { WebGPUEngine } from '@babylonjs/core/Engines';
+// import { Engine } from '@babylonjs/core/Engines/engine';
+
+import { CreateIcoSphere } from '@babylonjs/core/Meshes/Builders/icoSphereBuilder';
+import { Mesh } from '@babylonjs/core/Meshes/mesh';
+
+import '@babylonjs/core/Meshes/thinInstanceMesh';
+import '@babylonjs/core/Materials/standardMaterial'
+
 
 export class Babylon {
 
@@ -7,7 +22,7 @@ export class Babylon {
   
   // N = 10000;
   N = 1000;
-  // N = 2;
+  // N = 100;
 
   minRadius = 0.3;
   maxRadius = 1.8;
@@ -51,7 +66,7 @@ export class Babylon {
 
     this.scene = new Scene(engine);
     
-    this.ballMesh = MeshBuilder.CreateIcoSphere('balls', {radius:this.minRadius, flat:false, subdivisions:6});
+    this.ballMesh = CreateIcoSphere('balls', {radius:this.minRadius, flat:false, subdivisions:6});
     
     // material ///////////////////////////////////////////
 
