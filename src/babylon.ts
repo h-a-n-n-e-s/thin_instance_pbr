@@ -5,7 +5,7 @@ import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight';
 import { Scene } from '@babylonjs/core/scene';
 import { Vector3 } from '@babylonjs/core/Maths/math.vector';
 
-import { WebGPUEngine } from '@babylonjs/core/Engines';
+import { WebGPUEngine } from '@babylonjs/core/Engines/webgpuEngine';
 // import { Engine } from '@babylonjs/core/Engines/engine';
 
 import { CreateIcoSphere } from '@babylonjs/core/Meshes/Builders/icoSphereBuilder';
